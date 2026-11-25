@@ -7,7 +7,7 @@ Pinned code the outputs refer to: Kick Chat Translator `7d8671a`, Twitch Chat Tr
 ## witness/
 
 - `han-witness.mts`: runs 89 invented lines through the published detector (`detectLanguage` guess and `confidentLanguage` sure answer) and prints a table. Run from the root of a checkout: `REPO=<worktree> node --import tsx han-witness.mts`.
-- `expected.out`: the output on the pinned Kick commit. The first control of the plan is that the unchanged code reproduces it byte for byte.
+- `expected.out`: the output on the pinned Kick commit. The first control of the plan is that the unchanged code reproduces it byte for byte. Replayed from this repository's copy of the script on a clean export of `7d8671a`: exit 0, 91 lines, `cmp` identical to `expected.out`. The Python scripts were not replayed from this repository (they need the Unihan files or private chat).
 
 ## google-probe/
 
@@ -33,4 +33,4 @@ Character lists derived from the Unihan database (Unicode 18.0.0), with the scri
 
 ## Licence notice for the derived lists
 
-The lists are derived from Unihan data. Unicode License v3 (https://www.unicode.org/license.txt) permits using, copying, modifying and distributing the data without restriction, provided its copyright and permission notice appear with all copies of the data files or in associated documentation. The notice for the Unicode Character Database and Unihan data (Copyright 1991-2026 Unicode, Inc.) must travel with any copy of these lists. CC-CEDICT and CC-Canto (CC BY-SA) data were used for study only and are not derived into anything published here.
+The lists are derived from Unihan data. Unicode License v3 (https://www.unicode.org/license.txt) permits using, copying, modifying and distributing the data without restriction, provided its copyright and permission notice appear with all copies of the data files or in associated documentation. The full notice, fetched from the official file on 2026-11-25, is in `NOTICE-UNICODE.txt` and must travel with any copy of these lists. CC-CEDICT and CC-Canto (CC BY-SA) data were used for study only and are not derived into anything published here.
