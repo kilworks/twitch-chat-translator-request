@@ -6,6 +6,6 @@ A request comes from a store review, a support question or an issue. Each one ge
 
 | Case | Request | State |
 |---|---|---|
-| [001](cases/001-han-script-detection.md), [research thesis](cases/001-research-thesis.md) | Lines in languages written with Han characters are not detected correctly and are not translated | First change merged in the Kick extension, in review in the Twitch extension; second change a draft |
+| [001](cases/001-han-script-detection.md), [research thesis](cases/001-research-thesis.md), [annexes](cases/001-annexes/README.md) | Lines in languages written with Han characters are not detected correctly and are not translated | First change merged in the Kick extension, in review in the Twitch extension; second change a draft |
 
 No chat lines, names or personal data are stored here.

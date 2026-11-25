@@ -1,0 +1,24 @@
+probe2 (tl=en) outputs:
+   那個老人餓死了 -> The old man starved to death | detected en
+   起初她不喜歡馬 -> At first she didn't like horses | detected en
+   湯姆是個瘋子 -> Tom is crazy | detected en
+   他穿過了街道 -> he crossed the street | detected en
+   只是一個玩笑 -> just a joke | detected en
+   星期日見面吧 -> Let's meet on Sunday | detected en
+   拗不過他 -> Can't beat him | detected en
+   你最好不要出門 -> You'd better not go out | detected en
+same lines, different tl (detected):
+   那個老人餓死了 en:en ja:en fr:en zh-CN:en de:en
+   起初她不喜歡馬 en:en ja:en fr:en zh-CN:en de:en
+   湯姆是個瘋子 en:en ja:en fr:en zh-CN:en de:en
+   他穿過了街道 en:en ja:en fr:en zh-CN:en de:en
+   只是一個玩笑 en:en ja:en fr:en zh-CN:en de:en
+   星期日見面吧 en:en ja:en fr:en zh-CN:en de:en
+   拗不過他 en:en ja:en fr:en zh-CN:en de:en
+   你最好不要出門 en:en ja:en fr:en zh-CN:en de:en
+client dict-chrome-ex, tl=en vs ja:
+   那個老人餓死了 en:en ja:en
+   起初她不喜歡馬 en:en ja:en
+   湯姆是個瘋子 en:en ja:en
+   他穿過了街道 en:en ja:en
+   只是一個玩笑 en:en ja:en

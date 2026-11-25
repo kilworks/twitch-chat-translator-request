@@ -1,0 +1,91 @@
+label	text	detect	confident	skipSameLang(readers: en,ja,zh,zh-tw,ko)	allowlist[ja]	allowlist[zh]	allowlist[zh-tw]
+zh-tw	你好嗎ヽ(´ー`)ノ	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh-tw	好好笑(ノ°▽°)ノ	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh-tw	主播今天好帥ー	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh-tw	史蒂夫・賈伯斯	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh-tw	我の朋友好棒	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh	这是什么情况ー	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh	约翰・史密斯	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh	主播太强了ノ	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh	哈哈哈ヽ(´▽`)/	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	神の一手	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	最高の神回	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	草生える	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	うーん	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	ナイス	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	お疲れ様です	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	コーヒー飲みたい	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	歴史的瞬間	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+ja	圧勝	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	逆転	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	実質無敵	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+ja	観戦	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	戦術	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	総合優勝	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+ja	対戦	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	楽勝	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	変更	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	続行	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	売上	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	声優最高	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+ja	東京湾	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+ja	台湾	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+ja	湾岸	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+ja	開幕	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+ja	公開	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+ja	開始	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+ja	萬斎	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+ja	独裁開始	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+amb	草	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	初見	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	神回	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	最強	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	大草原	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+amb	最高	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	感謝	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	大丈夫	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+amb	日本語	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh	太强了	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh-tw	太強了	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh-tw	好厲害	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh	好厉害	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh	笑死我了	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh	真的假的	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh-tw	主播好帥	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh-tw	謝謝主播	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh-tw	這個遊戲真的很好玩	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+zh-tw	今天幾點開台	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+zh	这个主播真的好	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+zh-tw	主播好帥嗎	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+zh-tw	好ㄉ	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+zh-tw	ㄏㄏㄏ	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+zh-tw	晚安ㄌ大家	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+zh-tw	對ㄚ	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+zh-tw	真ㄉ假ㄉ	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+yue	你食咗飯未	yue	yue	-	lang_not_allowed	lang_not_allowed	lang_not_allowed
+yue	好正啊	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+yue	主播真係好叻	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+ko	한국 韓國	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+ko	韓國人 한	zh-tw	zh-tw	zh|zh-tw	lang_not_allowed	lang_not_allowed	keep
+ko	안녕하세요	ko	ko	ko	lang_not_allowed	lang_not_allowed	lang_not_allowed
+zh	gg 说得对	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+zh	I love 你好吗 lol	zh	zh	zh|zh-tw	lang_not_allowed	keep	lang_not_allowed
+zh-tw	GG 太強了	zh	undefined	-	lang_not_allowed	keep	lang_not_allowed
+ja	ww 草	es	undefined	-	lang_not_allowed	lang_not_allowed	lang_not_allowed
+ja	神ゲーww	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+amb	好	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+amb	笑	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+n/a	666	en	undefined	-	lang_not_allowed	lang_not_allowed	lang_not_allowed
+n/a	233	en	undefined	-	lang_not_allowed	lang_not_allowed	lang_not_allowed
+n/a	888	en	undefined	-	lang_not_allowed	lang_not_allowed	lang_not_allowed
+n/a	5555	en	undefined	-	lang_not_allowed	lang_not_allowed	lang_not_allowed
+zh-tw	@ゆきだるま 這可以嗎0.0	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+zh-tw	@さくら_12 你好	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	あー	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	えー	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	ラー	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	先輩ー？	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+ja	最強の犬ww	ja	ja	ja	keep	lang_not_allowed	lang_not_allowed
+amb	ー	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+ja	は	undefined	undefined	-	lang_unknown	lang_unknown	lang_unknown
+hasNonEnglishLetter(太強了)= true

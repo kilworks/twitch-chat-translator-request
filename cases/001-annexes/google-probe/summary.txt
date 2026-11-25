@@ -1,0 +1,27 @@
+ja_kanji_only   multi         sl=auto   tl=ja     n= 50 same= 37  detected={'ja': 35, 'zh-CN': 10, 'en': 5}
+ja_kanji_only   multi         sl=auto   tl=zh-CN  n= 50 same= 11  detected={'ja': 35, 'zh-CN': 10, 'en': 5}
+ja_kanji_only   multi         sl=auto   tl=zh-TW  n= 50 same= 20  detected={'ja': 35, 'zh-CN': 10, 'en': 5}
+ja_kanji_only   single        sl=auto   tl=ja     n= 50 same= 37  detected={'ja': 35, 'zh-CN': 10, 'en': 5}
+ja_kanji_only   single        sl=auto   tl=zh-CN  n= 50 same= 11  detected={'ja': 35, 'zh-CN': 10, 'en': 5}
+ja_kanji_only   single        sl=auto   tl=zh-TW  n= 50 same= 20  detected={'ja': 35, 'zh-CN': 10, 'en': 5}
+ja_kanji_only   single_forced sl=ja     tl=ja     n= 50 same= 50  detected={'ja': 50}
+ja_kanji_only   single_forced sl=ja     tl=zh-CN  n= 50 same=  4  detected={'ja': 50}
+ja_kanji_only   single_forced sl=ja     tl=zh-TW  n= 50 same=  6  detected={'ja': 50}
+zh_simplified   multi         sl=auto   tl=ja     n= 34 same=  0  detected={'zh-CN': 34}
+zh_simplified   multi         sl=auto   tl=zh-CN  n= 34 same= 34  detected={'zh-CN': 34}
+zh_simplified   multi         sl=auto   tl=zh-TW  n= 34 same= 18  detected={'zh-CN': 34}
+zh_simplified   single        sl=auto   tl=ja     n= 34 same=  0  detected={'zh-CN': 34}
+zh_simplified   single        sl=auto   tl=zh-CN  n= 34 same= 34  detected={'zh-CN': 34}
+zh_simplified   single        sl=auto   tl=zh-TW  n= 34 same= 18  detected={'zh-CN': 34}
+zh_simplified   single_forced sl=zh-CN  tl=ja     n= 34 same=  0  detected={'zh-CN': 34}
+zh_simplified   single_forced sl=zh-CN  tl=zh-CN  n= 34 same= 33  detected={'zh-TW': 34}
+zh_simplified   single_forced sl=zh-CN  tl=zh-TW  n= 34 same= 18  detected={'zh-CN': 34}
+zh_traditional  multi         sl=auto   tl=ja     n= 34 same=  0  detected={'zh-CN': 21, 'en': 12, 'ja': 1}
+zh_traditional  multi         sl=auto   tl=zh-CN  n= 34 same= 21  detected={'zh-CN': 21, 'en': 12, 'ja': 1}
+zh_traditional  multi         sl=auto   tl=zh-TW  n= 34 same= 32  detected={'zh-CN': 21, 'en': 12, 'ja': 1}
+zh_traditional  single        sl=auto   tl=ja     n= 34 same=  0  detected={'zh-CN': 21, 'en': 12, 'ja': 1}
+zh_traditional  single        sl=auto   tl=zh-CN  n= 34 same= 21  detected={'zh-CN': 21, 'en': 12, 'ja': 1}
+zh_traditional  single        sl=auto   tl=zh-TW  n= 34 same= 32  detected={'zh-CN': 21, 'en': 12, 'ja': 1}
+zh_traditional  single_forced sl=zh-TW  tl=ja     n= 34 same=  0  detected={'zh-TW': 34}
+zh_traditional  single_forced sl=zh-TW  tl=zh-CN  n= 34 same= 20  detected={'zh-TW': 34}
+zh_traditional  single_forced sl=zh-TW  tl=zh-TW  n= 34 same= 34  detected={'zh-TW': 34}

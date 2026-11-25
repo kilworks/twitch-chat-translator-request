@@ -1,0 +1,20 @@
+brave {
+ "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+ "secure": true,
+ "type": "undefined",
+ "translator": "undefined"
+}
+chrome {
+ "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36",
+ "secure": true,
+ "type": "function",
+ "translator": "function",
+ "availability": "unavailable"
+}
+edge {
+ "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36 Edg/158.0.0.0",
+ "secure": true,
+ "type": "function",
+ "translator": "function",
+ "availability": "unavailable"
+}

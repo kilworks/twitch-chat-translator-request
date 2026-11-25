@@ -1,0 +1,10 @@
+zh_simplified_unmarked     n=150  zh-CN=150
+zh_traditional_unmarked    n=150  en=148, ja=2
+zh_traditional_marked      n= 60  en=60
+yue_unmarked               n= 60  en=40, zh-CN=16, ja=2, yue=2
+other_ko                   n= 60  ko=60
+other_th                   n= 60  th=60
+other_ar                   n= 60  ar=58, fa=1, sd=1
+other_ru                   n= 60  ru=51, ky=2, uk=2, sr=2, bg=2, be=1
+other_el                   n= 60  el=60
+other_he                   n= 60  iw=60

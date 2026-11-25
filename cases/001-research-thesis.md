@@ -318,6 +318,8 @@ Of 40 hand-judged lines, the published detector was wrong or misleading on 11, a
 
 See [case 001](001-han-script-detection.md) for what was implemented, merged and measured (KCT pull request 91 and TCT pull request 26, both merged on 2026-11-25), and for the parts that stayed a draft. That case reports its own sets (a design set of 3,608 distinct lines, with the service verdict collection cut by a rate limit after 1,133 lines and the held-out set never scored), which is a narrower outcome than the plan above foresaw. The two documents were written by different working sessions and differ on set sizes and wording; where they differ, case 001 is the record of what was run.
 
-## 12. Not published
+## 12. Annexes and what stays private
 
-The working dossier (raw probes, derived tables and lists, review reports, the 83 KB implementation brief) stays private: it holds local paths and data derived from third-party chat. This repository keeps counts and method only.
+Reproducible material (witness script and expected output, probe scripts and aggregates, browser API check, Unihan-derived lists and generators) is in [001-annexes](001-annexes/README.md).
+
+The rest of the working dossier (raw probe answers, other derived tables, review reports, the 83 KB implementation brief) stays private: it holds local paths and data derived from third-party chat. This repository keeps counts and method only.
