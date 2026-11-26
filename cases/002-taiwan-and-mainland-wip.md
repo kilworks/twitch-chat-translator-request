@@ -64,6 +64,10 @@ The OpenCC Taiwan phrase tables give 796 mainland terms and 753 Taiwan terms. Sh
 
 At most a few percent of lines carry a marker and the two sides are not clean (Common Voice mainland has as many Taiwan terms as mainland terms). Vocabulary is not a lever for chat-length lines. The script itself (Traditional against Simplified characters) stays the main signal.
 
+## Wikipedia variants: what the smaller table costs
+
+The same 400 articles converted by MediaWiki to the Taiwan, Hong Kong and mainland variants (808 to 810 Han-only lines each). Share read as Traditional (`zh-tw`) on master and on the open change without the reverted step: Taiwan 71.2 to 59.2, Hong Kong 71.0 to 59.1. Mainland lines with no answer: 54.6 to 56.0. The smaller Traditional table loses recall on Traditional text (Common Voice Taiwan 44.5 to 39.2, subtitles 54.3 to 50.3 as well) and gains nothing on the mainland side. What it buys is fewer Japanese lines read as Chinese. A narrower fix is open: keep the old table and remove only the characters that Japanese also writes.
+
 ## Next
 
 - Wikipedia articles converted to the three variants, to see which characters differ between them (running).
