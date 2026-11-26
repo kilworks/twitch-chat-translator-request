@@ -7,5 +7,6 @@ A request comes from a store review, a support question or an issue. Each one ge
 | Case | Request | State |
 |---|---|---|
 | [001](cases/001-han-script-detection.md), [research thesis](cases/001-research-thesis.md), [annexes](cases/001-annexes/README.md) | Lines in languages written with Han characters are not detected correctly and are not translated | First change merged in the Kick extension, in review in the Twitch extension; second change a draft |
+| [002](cases/002-taiwan-and-mainland-wip.md) | Taiwan and mainland China told apart in the detector (follows 001) | Work in progress: test sets with known origin collected, first reading shows the second change of 001 reads Taiwanese lines as mainland |
 
 No chat lines, names or personal data are stored here.
