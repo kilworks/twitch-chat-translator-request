@@ -109,6 +109,12 @@ What pass C says: the answer depends on which stream the line is in, and the lin
 
 Both extensions carry the lists and the Japanese-only characters in open pull requests. Remaining weight margin under the +4,000 bytes rule: 186 bytes.
 
+## After the review of the owner (26 Nov, night)
+
+- Merged: the data-driven marker lists (Kick 93), the Japanese-only characters (Kick 94) and the port of both (Twitch 28). Closed without merge: the two earlier pull requests (Kick 92, Twitch 27), superseded.
+- Pass B reopened with twice the budget and a calibrated logistic model: no confidence reaches 1 percent wrong on the lines the rules leave unanswered (a grid of nine models, 2 KB to 11.4 KB). At 0.995 confidence 153 of 16,406 dev lines are answered with 5.9 percent wrong, mostly Cantonese against Traditional. The fresh set built for it (about 940,000 chat-like lines) was not read and stays fresh.
+- A channel-language option for the Cantonese price: the declared channel language does not carry it. Kick reports one Chinese code, and all 109,916 Twitch lines declared Chinese in the collected data are `zh`, none `zh-hk`. What does carry it is the stream itself: in the 31 Twitch Chinese chat units with at least 50 Han-only lines, the share of lines named Cantonese is at most 0.4 percent in every one (all Taiwanese streams), while Cantonese written chat names about half of its lines Cantonese. A running per-stream count could therefore tell the two apart without any new input; it is untested on a real Cantonese stream because the data holds none.
+
 ## Next
 
 - Wikipedia articles converted to the three variants, to see which characters differ between them (running).
