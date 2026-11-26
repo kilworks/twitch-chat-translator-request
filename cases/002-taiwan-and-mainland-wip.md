@@ -93,6 +93,22 @@ About 340,000 distinct Han-only lines of known origin (Taiwan, mainland, Hong Ko
 
 Weight +3,275 bytes gzip, speed 0.95 times. On real Twitch chat declared Chinese (33,852 lines, not used to choose anything): no answer 62.9 to 46.3 percent. Not tried: a Cantonese marker list chosen the same way (56 to 60 percent `yue` on dev but 0.5 to 2.4 percent of Taiwanese lines named Cantonese), a character n-gram classifier, Kick chat.
 
+## Passes on top of the lists (26 Nov, evening)
+
+Each pass had its rule committed before its fresh set was read, one reading, and a verdict published as it came. Fresh sets that never chose or tuned anything: formal subtitles (338,867 Taiwanese and 334,479 mainland lines), chat-like lines (forum sentences, video comments, 270,309 mainland lines) and Japanese video comments (about 230,000 lines).
+
+| Pass | What | Verdict | Counts |
+|---|---|---|---|
+| A1 | 149 character bigrams as the last resort of the script rule | FAIL, not merged | Japanese leak 1.34 to 1.36 percent, recall +0.79 (Taiwan) and +0.13 (mainland) against 3 asked, weight +908 bytes against a margin of 725 |
+| A2 | 175 characters only Japanese writes | FAIL, not merged | Japanese lines named Japanese +20.09 points, but Chinese lines named Japanese +0.07 (Taiwan) and +0.03 (Cantonese) against 0.02 allowed |
+| A2b | 151 stricter characters (absent from every Chinese train line) | PASS, pull request open | Japanese lines named Japanese 0 to 16.77 percent, Chinese origins at most +0.01 point, weight +539 bytes, speed 1.05 times |
+| B | n-gram model on the lines the rules leave unanswered | FAIL, stays out | no confidence reached 1 percent wrong on dev beyond 50 features; at 50 features (404 bytes) Taiwanese lines are named wrongly more often than rightly |
+| C | skip only on a sure language | measured, not implemented | Mandarin markers cover 34 percent of Taiwanese lines at 3 percent Cantonese; cost of a `zh-tw` reader per 1,000 lines: Taiwanese chat 297 to 727, Hong Kong chat 3,224 to 187 |
+
+What pass C says: the answer depends on which stream the line is in, and the line alone cannot tell. A stream-level input (the declared language of the channel) would choose between the two rules; that is a product change left to the owner.
+
+Both extensions carry the lists and the Japanese-only characters in open pull requests. Remaining weight margin under the +4,000 bytes rule: 186 bytes.
+
 ## Next
 
 - Wikipedia articles converted to the three variants, to see which characters differ between them (running).
