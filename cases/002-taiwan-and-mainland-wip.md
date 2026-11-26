@@ -68,6 +68,17 @@ At most a few percent of lines carry a marker and the two sides are not clean (C
 
 The same 400 articles converted by MediaWiki to the Taiwan, Hong Kong and mainland variants (808 to 810 Han-only lines each). Share read as Traditional (`zh-tw`) on master and on the open change without the reverted step: Taiwan 71.2 to 59.2, Hong Kong 71.0 to 59.1. Mainland lines with no answer: 54.6 to 56.0. The smaller Traditional table loses recall on Traditional text (Common Voice Taiwan 44.5 to 39.2, subtitles 54.3 to 50.3 as well) and gains nothing on the mainland side. What it buys is fewer Japanese lines read as Chinese. A narrower fix is open: keep the old table and remove only the characters that Japanese also writes.
 
+## Narrow candidate: five shared characters removed (failed its own rule)
+
+The rule was written before scoring (see the detection notes in the extension repository). The candidate removed `開` and `萬` from the Traditional list, `声` and `湾` from the Simplified list and `嬲` from the Cantonese list, and added nothing.
+
+- Japanese leak, passed: among 987 Han-only Japanese lines that contain one of the five characters (taken from 8.3 million Niconico comments, subtitles and Wikipedia), the share read as Chinese fell from 94.1 to 1.5 percent.
+- Chinese recall, failed: the share of the expected answer fell by more than the 0.3 points allowed on most sets: Taiwan 1.1 to 2.8 points, Hong Kong 0.9 to 2.7, mainland 0.4 to 1.4 (Cantonese unchanged).
+- Why it cannot be split: a line whose only marker is one of these characters is ambiguous between Japanese and Chinese, so removing the marker moves those lines from a right answer to silence in Chinese chat and from a wrong answer to silence in Japanese chat. Lines decided by the character alone: Taiwan 157 (`開`) and 47 (`萬`) of 13,994; mainland 82 (`声`) and 60 (`湾`) of 27,555.
+- How often it matters on the Japanese side: 828 of 362,323 Han-only Niconico comments (0.23 percent of them, 0.01 percent of all comments) against 1.1 percent of Han-only Taiwanese lines for `開` alone.
+
+Decision: not merged, not opened as a pull request. The tables stay as they are on `master`.
+
 ## Next
 
 - Wikipedia articles converted to the three variants, to see which characters differ between them (running).
