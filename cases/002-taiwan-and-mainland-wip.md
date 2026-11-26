@@ -79,6 +79,20 @@ The rule was written before scoring (see the detection notes in the extension re
 
 Decision: not merged, not opened as a pull request. The tables stay as they are on `master`.
 
+## Marker lists chosen from the data (pull request open)
+
+About 340,000 distinct Han-only lines of known origin (Taiwan, mainland, Hong Kong, Cantonese, Japan), cut by a hash of the line into train, dev and test. The 45-character Traditional and Simplified lists become 506 and 592 characters, picked one at a time by newly covered Chinese lines per Japanese line flagged, under a Japanese budget picked on dev. The rule was written before the test split was read, amended once for the Cantonese price, and read once.
+
+| Test split | master | candidate |
+|---|---|---|
+| Taiwanese lines named Traditional | 59.3 % | 77.8 % |
+| Mainland lines named Simplified | 37.8 % | 82.4 % |
+| Han-only Japanese lines read as Chinese | 1.13 % | 0.73 % |
+| Cantonese lines read `yue` | 52.0 % | 52.0 % |
+| Cantonese lines read Traditional (price) | 25.1 % | 36.6 % |
+
+Weight +3,275 bytes gzip, speed 0.95 times. On real Twitch chat declared Chinese (33,852 lines, not used to choose anything): no answer 62.9 to 46.3 percent. Not tried: a Cantonese marker list chosen the same way (56 to 60 percent `yue` on dev but 0.5 to 2.4 percent of Taiwanese lines named Cantonese), a character n-gram classifier, Kick chat.
+
 ## Next
 
 - Wikipedia articles converted to the three variants, to see which characters differ between them (running).
