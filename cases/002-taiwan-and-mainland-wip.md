@@ -43,10 +43,29 @@ Share of Han-only lines by answer of `confidentLanguage`. First figure: current 
 | Subtitles (mainland) | 5.1 to 5.0 | 41.5 to 64.0 | 0.1 to 0.1 | 53.4 to 31.0 |
 | Bilibili (mainland) | 0.1 to 0.1 | 38.0 to 56.1 | 0.1 to 0.1 | 61.7 to 43.6 |
 
-Reading: the second change helps the mainland (silence 70 to 52 percent on one set) and hurts Taiwan, where up to 22.7 percent of lines now read as mainland Chinese. The lines that cause it use characters shared by both scripts. That step cannot be merged as it is.
+Reading: the second change helps the mainland (silence 70 to 52 percent on one set) and hurts Taiwan, where up to 22.7 percent of lines now read as mainland Chinese. The lines that cause it use characters shared by both scripts. That step is now reverted (next section).
+
+## What was done with it (2026-11-26)
+
+The function-character step of case 001's second change is reverted in both open pull requests. Without it, Taiwanese lines read as Simplified Chinese stay at 1.5 percent (subtitles), 0.2 (forum) and 0 (Common Voice), the same as before the change. The price is that the mainland gain went with it: silence on mainland Common Voice lines is 69.7 percent on master, 52.4 with the step, 70.8 without.
+
+## Vocabulary markers from the OpenCC tables: too rare to help
+
+The OpenCC Taiwan phrase tables give 796 mainland terms and 753 Taiwan terms. Share of Han-only lines that contain a term of one side only:
+
+| Set (origin) | mainland term | Taiwan term |
+|---|---|---|
+| Common Voice (Taiwan) | 1.0 | 3.7 |
+| Subtitles (Taiwan) | 0.7 | 0.7 |
+| Forum (Taiwan) | 1.0 | 2.6 |
+| Common Voice (mainland) | 3.7 | 3.6 |
+| Subtitles (mainland) | 0.8 | 0.5 |
+| Bilibili (mainland) | 2.2 to 1.2 | 0.3 to 0.2 |
+
+At most a few percent of lines carry a marker and the two sides are not clean (Common Voice mainland has as many Taiwan terms as mainland terms). Vocabulary is not a lever for chat-length lines. The script itself (Traditional against Simplified characters) stays the main signal.
 
 ## Next
 
-- A script-neutral answer for shared-character Chinese, so a Taiwanese line is never named Simplified.
-- Vocabulary markers from the OpenCC Taiwan phrase tables, measured on the sets above, for lines where the script gives no clue.
-- A held-out reading on a set never used to choose anything, with the rule written before scoring, as in case 001.
+- Wikipedia articles converted to the three variants, to see which characters differ between them (running).
+- A script-neutral answer is no longer the first need: with the step reverted, the detector does not name a script it cannot see. What is open is the held-out reading of what remains (tables and bopomofo), whose cost interval for English and Japanese readers includes 0.
+- A held-out reading on a set never used to choose anything, with the rule written before scoring.
